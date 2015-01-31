@@ -1,0 +1,3 @@
+ag_im_agence_homepage:
+    path:     /hello/{name}
+    defaults: { _controller: AgImAgenceBundle:Default:index }

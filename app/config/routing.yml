@@ -1,0 +1,4 @@
+ag_im_agence:
+    resource: "@AgImAgenceBundle/Resources/config/routing.yml"
+    prefix:   /
+

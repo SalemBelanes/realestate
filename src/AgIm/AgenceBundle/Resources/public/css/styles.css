@@ -1,0 +1,136 @@
+body{
+	font-size:11px;
+	font-family:Arial, Helvetica, sans-serif;
+	color:#535353;
+	background:url("/bundles/agimagence/images/bg-body.png") center top repeat-x;
+}
+.center{
+	width:930px;
+	min-height:830px;
+
+	margin:0 auto;
+
+}
+.logo{
+  float: left;
+    height: 58px;
+    width: 234px;;
+}
+.header{
+	height:80px; 
+}
+.search{
+	 background: url("http://monsite/bg-search.png") no-repeat scroll 0 0 rgba(0, 0, 0, 0);
+    float: right;
+    height: 32px;
+    margin-top: 14px;
+    width: 220px;
+}
+nav{
+	height:30px;
+	margin:0px;
+	
+}
+nav li a{
+color:#000;
+}
+nav li{
+	display:inline-block;
+	width:auto;
+	padding:0 5px;
+	margin-left:30px;
+}
+.content{
+	padding:5px;
+
+	float:left;
+	width:100%;
+	min-height:740px;
+	
+}
+.content-top{
+	height:375px;
+
+}
+.content-bas{
+	height:318px;
+	border:1px red;
+}
+h4{
+color:#095484;
+font-family:Verdana, Geneva, sans-serif;
+font-weight:bold;
+font-size:18px;	
+}
+.slideshow{
+	height:370px;
+	width:700px;
+	float:left;
+	background:url(http://monsite/slide1.png) no-repeat;
+}
+.mod-recherche{
+	float:right;
+	width:216px;
+	height:367px;
+	background:#5773b0;
+}
+.mod-recherche form{
+	color:#fff;
+	width:80%;
+	margin-left:15px;
+}
+.annance-detail{
+	width:25%;
+	float:left;
+}
+.savoir{
+   background: none repeat scroll 0 0 #00477f;
+    color: #fff;
+    display: block;
+    float: right;
+    font-size: 11px;
+    font-weight: bold;
+    height: 20px;
+    line-height: 19px;
+    text-align: center;
+    width: 102px;
+}
+.footer{
+	height:100px;
+	background:url(http://monsite/bg-footer.png) repeat-x;
+	
+}
+.lire-more{
+    
+    height:20px; float:left;color: #fff;
+    margin-top: 20px;
+}
+.reseaux{
+   width:180px;
+   height: 40px;
+   float: right;
+    
+}
+.reseaux a{
+    width:36px;
+    height:36px;
+    display: inline-block;
+    
+    
+}
+.reseau1{
+    background:url(http://monsite/fb.png) no-repeat;
+    
+}
+.reseau2{
+    background:url(http://monsite/mail.png) no-repeat;
+    
+}
+.reseau3{
+    background:url(http://monsite/gmail.png) no-repeat;
+    
+}
+.reseau4{
+    background:url(http://monsite/twitter.png) no-repeat;
+    
+}

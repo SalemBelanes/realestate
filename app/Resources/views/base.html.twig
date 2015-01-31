@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=10" />
+        <title>{% block title %}Bienvenue{% endblock %}</title>
+        {% block stylesheets %}
+            {% stylesheets filter='?yui_css'
+                '@AgImAgenceBundle/Resources/public/css/styles.css'
+            %}           
+            <link rel="stylesheet" href="{{ asset_url }}" />
+            {% endstylesheets %}  
+            
+        {% endblock %}
+
+    </head>
+    <body id="body"> 
+        <div id="top">
+            <div class="header-top"> 
+
+
+                <div id="connexion">
+
+
+                </div>
+
+            </div>
+        </div>
+        <div class="top-contenu"></div>
+        <div id="contenu" style="display: none">
+
+            <ul id="mon-compte">
+
+                <li id="menu-coordonnee"><a href=""><p>Mes coordonnées</p></a></li>
+                <li id="menu-change-password"  ><a href=""><p>Modifier mon mot de passe</p></a></li>
+                <li id="menu-profile-utilisateur"  ><a href=''><p>Mes médias</p></a></li>
+                <li id="menu-Complement-utilisateur"  ><a href=''><p>Ma société</p></a></li>
+            </ul>
+
+            <ul id="liste-informations">
+
+
+
+            </ul>
+        </div>
+
+
+    </div>
+    {% block body %}
+
+    {% endblock %}
+    <div class="clearfooter"></div>
+</div>
+<div class="bas-contenu"></div>
+<div id="footer">  
+    <div class="text-footer"></div>
+</div>
+
+</body>
+</html>
+
