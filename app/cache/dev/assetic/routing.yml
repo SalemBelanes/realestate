@@ -2,4 +2,4 @@ _assetic:
     resource: .
     type: assetic
 _app:
-    resource: 'D:/businessInvent/monsite/app/config/routing_dev.yml'
+    resource: 'D:/businessInvent/realestate/app/config/routing_dev.yml'

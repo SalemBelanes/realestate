@@ -1,7 +1,7 @@
 <?php
 
-/* WebProfilerBundle:Profiler:layout.html.twig */
-class __TwigTemplate_1d6f2967424c74e1d6223f771a5e99a702912813fb1f485806586964550b48b0 extends Twig_Template
+/* @WebProfiler/Profiler/layout.html.twig */
+class __TwigTemplate_bcf40e46c19fc4187d7a9c0e47a084645572ab848934f4975d8229d2f0dda968 extends Twig_Template
 {
     public function __construct(Twig_Environment $env)
     {
@@ -250,7 +250,7 @@ class __TwigTemplate_1d6f2967424c74e1d6223f771a5e99a702912813fb1f485806586964550
 
     public function getTemplateName()
     {
-        return "WebProfilerBundle:Profiler:layout.html.twig";
+        return "@WebProfiler/Profiler/layout.html.twig";
     }
 
     public function isTraitable()
