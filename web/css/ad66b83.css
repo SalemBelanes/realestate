@@ -20,7 +20,7 @@ body{
 	height:80px; 
 }
 .search{
-	 background: url("http://monsite/bg-search.png") no-repeat scroll 0 0 rgba(0, 0, 0, 0);
+	 background: url("/bundles/agimagence/images/bg-search.png") no-repeat scroll 0 0 rgba(0, 0, 0, 0);
     float: right;
     height: 32px;
     margin-top: 14px;
@@ -66,7 +66,7 @@ font-size:18px;
 	height:370px;
 	width:700px;
 	float:left;
-	background:url(http://monsite/slide1.png) no-repeat;
+	background:url("/bundles/agimagence/images/slide1.png") no-repeat;
 }
 .mod-recherche{
 	float:right;
@@ -97,7 +97,7 @@ font-size:18px;
 }
 .footer{
 	height:100px;
-	background:url(http://monsite/bg-footer.png) repeat-x;
+	background:url("/bundles/agimagence/images/bg-footer.png") repeat-x;
 	clear: both;
 }
 .lire-more{
@@ -119,18 +119,18 @@ font-size:18px;
     
 }
 .reseau1{
-    background:url(http://monsite/fb.png) no-repeat;
+    background:url("/bundles/agimagence/images/fb.png") no-repeat;
     
 }
 .reseau2{
-    background:url(http://monsite/mail.png) no-repeat;
+    background:url("/bundles/agimagence/images/mail.png") no-repeat;
     
 }
 .reseau3{
-    background:url(http://monsite/gmail.png) no-repeat;
+    background:url("/bundles/agimagence/images/gmail.png") no-repeat;
     
 }
 .reseau4{
-    background:url(http://monsite/twitter.png) no-repeat;
+    background:url("/bundles/agimagence/images/twitter.png") no-repeat;
     
 }
