@@ -1,0 +1,30 @@
+annonce:
+    path:     /
+    defaults: { _controller: "AgImAgenceBundle:Annonce:index" }
+
+annonce_show:
+    path:     /{id}/show
+    defaults: { _controller: "AgImAgenceBundle:Annonce:show" }
+
+annonce_new:
+    path:     /new
+    defaults: { _controller: "AgImAgenceBundle:Annonce:new" }
+
+annonce_create:
+    path:     /create
+    defaults: { _controller: "AgImAgenceBundle:Annonce:create" }
+    requirements: { _method: post }
+
+annonce_edit:
+    path:     /{id}/edit
+    defaults: { _controller: "AgImAgenceBundle:Annonce:edit" }
+
+annonce_update:
+    path:     /{id}/update
+    defaults: { _controller: "AgImAgenceBundle:Annonce:update" }
+    requirements: { _method: post|put }
+
+annonce_delete:
+    path:     /{id}/delete
+    defaults: { _controller: "AgImAgenceBundle:Annonce:delete" }
+    requirements: { _method: post|delete }

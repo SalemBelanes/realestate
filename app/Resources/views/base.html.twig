@@ -1,61 +1,89 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-        <meta http-equiv="X-UA-Compatible" content="IE=10" />
-        <title>{% block title %}Bienvenue{% endblock %}</title>
-        {% block stylesheets %}
-            {% stylesheets filter='?yui_css'
-                '@AgImAgenceBundle/Resources/public/css/styles.css'
-            %}           
-            <link rel="stylesheet" href="{{ asset_url }}" />
-            {% endstylesheets %}  
-            
+        <meta charset="UTF-8" />
+        <title>{% block title %}Realstate{% endblock %}</title>
+        {% block stylesheets %}          
+            {% include "::communStyleSheet.html.twig" %}          
+        {% endblock %}
+        {% block javascripts %}  
+            {% include "::communJavaScript.html.twig" %}
         {% endblock %}
 
+        <link rel="icon" type="image/x-icon" href="{{ asset('favicon.ico') }}" />
     </head>
-    <body id="body"> 
-        <div id="top">
-            <div class="header-top"> 
+    <body>
+        <div class="wrapper">
+            <div class="center">
+                <div class="header">
+                    <div class="logo">
+                        <a href="{{ path('ag_im_agence_homepage') }}">
+                            <img src="{{ asset('bundles/agimagence/images/logo.png') }}" />
+                        </a>
+                    </div>
+                    <div class="search">
 
-
-                <div id="connexion">
-
-
+                    </div>
                 </div>
+                <nav>
+                    <li class="menu">
+                        <a href="#">Immobilier Horizon</a>
+                    </li>
+                    <li class="menu">
+                        <a href="#">Acheter</a>
+                    </li>
+                    <li class="menu">
+                        <a href="#">Vendre</a>
+                    </li>
+                    <li class="menu">
+                        <a href="#">Investir</a>
+                    </li>
+                    <li class="menu">
+                        <a href="#">Contact</a>
+                    </li>
+
+                </nav>
+                <div class="content">
+                    <div class="content-top">
+                        <div class="slideshow">
+                        </div>
+                        <div class="mod-recherche">
+                            <form action="">
+                                Localisation<br>
+                                <input type="text" name="location""><br>
+                                Type de bien<br>                        
+                                <input type="text" name="LastName"><br>
+                                Pièces<br>                        
+                                <input type="text" name="LastName"><br>
+                                Salles de bain<br>                        
+                                <input type="text" name="LastName"><br>
+                                Environnement<br>                        
+                                <input type="text" name="LastName"><br>
+                                Prix<br>                        
+                                <input type="text" name="LastName"><br>
+                                <input type="submit" value="Trouver des biens">
+                            </form>
+                        </div>
+                    </div>
+                {% block body %}{% endblock %}
+
 
             </div>
         </div>
-        <div class="top-contenu"></div>
-        <div id="contenu" style="display: none">
 
-            <ul id="mon-compte">
-
-                <li id="menu-coordonnee"><a href=""><p>Mes coordonnées</p></a></li>
-                <li id="menu-change-password"  ><a href=""><p>Modifier mon mot de passe</p></a></li>
-                <li id="menu-profile-utilisateur"  ><a href=''><p>Mes médias</p></a></li>
-                <li id="menu-Complement-utilisateur"  ><a href=''><p>Ma société</p></a></li>
-            </ul>
-
-            <ul id="liste-informations">
-
-
-
-            </ul>
+        <div class="footer">
+            <div style="margin:0 auto;width:930px; bordre:1px solid red;">
+                <div class="lire-more">
+                    <a>Immobilier Horizon</a> | <a>Acheter | </a> <a>Vendre | </a><a>Investir  | </a> <a>Contact</a> 
+                </div>
+                <div class="reseaux">
+                    <a href="#" class="reseau1"></a>
+                    <a href="#" class="reseau2"></a>
+                    <a href="#" class="reseau3"></a>
+                    <a href="#" class="reseau4"></a>
+                </div>
+            </div>
         </div>
-
-
     </div>
-    {% block body %}
-
-    {% endblock %}
-    <div class="clearfooter"></div>
-</div>
-<div class="bas-contenu"></div>
-<div id="footer">  
-    <div class="text-footer"></div>
-</div>
-
 </body>
 </html>
-

@@ -15,3 +15,8 @@ parameters:
     debug_toolbar: true
     debug_redirects: false
     use_assetic_controller: true
+    
+     
+    upload_dir: /uploads
+    upload_annonce: /annonce_
+    upload_medias: /medias

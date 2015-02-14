@@ -1,0 +1,84 @@
+{% extends '::base.html.twig' %}
+
+{% block body -%}
+    <h1>Annonce</h1>
+
+    <table class="record_properties">
+        <tbody>
+            <tr>
+                <th>Id</th>
+                <td>{{ entity.id }}</td>
+            </tr>
+            <tr>
+                <th>Titre</th>
+                <td>{{ entity.titre }}</td>
+            </tr>
+            <tr>
+                <th>Description</th>
+                <td>{{ entity.description }}</td>
+            </tr>
+            <tr>
+                <th>Date_creation</th>
+                <td>{{ entity.datecreation|date('Y-m-d H:i:s') }}</td>
+            </tr>
+            <tr>
+                <th>Date_echeance</th>
+                <td>{{ entity.dateecheance|date('Y-m-d H:i:s') }}</td>
+            </tr>
+            <tr>
+                <th>Ville</th>
+                <td>{{ entity.ville }}</td>
+            </tr>
+            <tr>
+                <th>Rue</th>
+                <td>{{ entity.rue }}</td>
+            </tr>
+            <tr>
+                <th>Etat</th>
+                <td>{{ entity.etat }}</td>
+            </tr>
+            <tr>
+                <th>Code_postal</th>
+                <td>{{ entity.codepostal }}</td>
+            </tr>
+            <tr>
+                <th>Prix</th>
+                <td>{{ entity.prix }}</td>
+            </tr>
+            <tr>
+                <th>Telephone</th>
+                <td>{{ entity.telephone }}</td>
+            </tr>
+            <tr>
+                <th>Type</th>
+                <td>{{ entity.type }}</td>
+            </tr>
+            <tr>
+                <th>Nombre_piece</th>
+                <td>{{ entity.nombrepiece }}</td>
+            </tr>
+            <tr>
+                <th>Nombre_like</th>
+                <td>{{ entity.nombrelike }}</td>
+            </tr>
+            <tr>
+                <th>Nombre_dislike</th>
+                <td>{{ entity.nombredislike }}</td>
+            </tr>
+        </tbody>
+    </table>
+
+        <ul class="record_actions">
+    <li>
+        <a href="{{ path('annonce') }}">
+            Back to the list
+        </a>
+    </li>
+    <li>
+        <a href="{{ path('annonce_edit', { 'id': entity.id }) }}">
+            Edit
+        </a>
+    </li>
+    <li>{{ form(delete_form) }}</li>
+</ul>
+{% endblock %}

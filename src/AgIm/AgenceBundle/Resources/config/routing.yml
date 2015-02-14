@@ -1,3 +1,11 @@
+ag_im_agence_medias:
+    resource: "@AgImAgenceBundle/Resources/config/routing/medias.yml"
+    prefix:   /medias
+
+ag_im_agence_annonce:
+    resource: "@AgImAgenceBundle/Resources/config/routing/annonce.yml"
+    prefix:   /annonce
+
 ag_im_agence_homepage:
-    path:     /hello/{name}
+    path:     /accueil
     defaults: { _controller: AgImAgenceBundle:Default:index }

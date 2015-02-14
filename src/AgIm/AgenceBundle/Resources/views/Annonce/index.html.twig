@@ -1,0 +1,67 @@
+{% extends '::base.html.twig' %}
+
+{% block body -%}
+    <h1>Annonce list</h1>
+
+    <table class="records_list">
+        <thead>
+            <tr>
+                <th>Id</th>
+                <th>Titre</th>
+                <th>Description</th>
+                <th>Date_creation</th>
+                <th>Date_echeance</th>
+                <th>Ville</th>
+                <th>Rue</th>
+                <th>Etat</th>
+                <th>Code_postal</th>
+                <th>Prix</th>
+                <th>Telephone</th>
+                <th>Type</th>
+                <th>Nombre_piece</th>
+                <th>Nombre_like</th>
+                <th>Nombre_dislike</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody>
+        {% for entity in entities %}
+            <tr>
+                <td><a href="{{ path('annonce_show', { 'id': entity.id }) }}">{{ entity.id }}</a></td>
+                <td>{{ entity.titre }}</td>
+                <td>{{ entity.description }}</td>
+                <td>{% if entity.datecreation %}{{ entity.datecreation|date('Y-m-d H:i:s') }}{% endif %}</td>
+                <td>{% if entity.dateecheance %}{{ entity.dateecheance|date('Y-m-d H:i:s') }}{% endif %}</td>
+                <td>{{ entity.ville }}</td>
+                <td>{{ entity.rue }}</td>
+                <td>{{ entity.etat }}</td>
+                <td>{{ entity.codepostal }}</td>
+                <td>{{ entity.prix }}</td>
+                <td>{{ entity.telephone }}</td>
+                <td>{{ entity.type }}</td>
+                <td>{{ entity.nombrepiece }}</td>
+                <td>{{ entity.nombrelike }}</td>
+                <td>{{ entity.nombredislike }}</td>
+                <td>
+                <ul>
+                    <li>
+                        <a href="{{ path('annonce_show', { 'id': entity.id }) }}">show</a>
+                    </li>
+                    <li>
+                        <a href="{{ path('annonce_edit', { 'id': entity.id }) }}">edit</a>
+                    </li>
+                </ul>
+                </td>
+            </tr>
+        {% endfor %}
+        </tbody>
+    </table>
+
+        <ul>
+        <li>
+            <a href="{{ path('annonce_new') }}">
+                Create a new entry
+            </a>
+        </li>
+    </ul>
+    {% endblock %}

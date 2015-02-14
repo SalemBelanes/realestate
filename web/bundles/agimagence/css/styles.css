@@ -2,7 +2,7 @@ body{
 	font-size:11px;
 	font-family:Arial, Helvetica, sans-serif;
 	color:#535353;
-	background:url(http://monsite/bg-body.png) center top repeat-x;
+	background:url("/bundles/agimagence/images/bg-body.png") center top repeat-x;
 }
 .center{
 	width:930px;

@@ -2,7 +2,7 @@ body{
 	font-size:11px;
 	font-family:Arial, Helvetica, sans-serif;
 	color:#535353;
-	background:url(http://monsite/bg-body.png) center top repeat-x;
+	background:url("/bundles/agimagence/images/bg-body.png") center top repeat-x;
 }
 .center{
 	width:930px;
@@ -45,7 +45,7 @@ nav li{
 
 	float:left;
 	width:100%;
-	min-height:800px;
+	min-height:740px;
 	
 }
 .content-top{
@@ -102,5 +102,35 @@ font-size:18px;
 }
 .lire-more{
     
-    height:20px; float:left;
+    height:20px; float:left;color: #fff;
+    margin-top: 20px;
+}
+.reseaux{
+   width:180px;
+   height: 40px;
+   float: right;
+    
+}
+.reseaux a{
+    width:36px;
+    height:36px;
+    display: inline-block;
+    
+    
+}
+.reseau1{
+    background:url(http://monsite/fb.png) no-repeat;
+    
+}
+.reseau2{
+    background:url(http://monsite/mail.png) no-repeat;
+    
+}
+.reseau3{
+    background:url(http://monsite/gmail.png) no-repeat;
+    
+}
+.reseau4{
+    background:url(http://monsite/twitter.png) no-repeat;
+    
 }

@@ -1,0 +1,12 @@
+{% javascripts
+    '../app/Resources/public/js/jquery.js'
+%}
+<script src="{{ asset_url }}"></script>
+{% endjavascripts %}
+{% javascripts filter='?closure'
+    
+'../app/Resources/public/js/script.js'
+
+%}
+<script src="{{ asset_url }}"></script>
+{% endjavascripts %}
