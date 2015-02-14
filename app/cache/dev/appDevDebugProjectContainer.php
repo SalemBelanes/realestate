@@ -3532,7 +3532,7 @@ class appDevDebugProjectContainer extends Container
             'kernel.root_dir' => 'D:/businessInvent/realestate/app',
             'kernel.environment' => 'dev',
             'kernel.debug' => true,
-            'kernel.name' => 'app',
+            'kernel.name' => 'ap_',
             'kernel.cache_dir' => 'D:/businessInvent/realestate/app/cache/dev',
             'kernel.logs_dir' => 'D:/businessInvent/realestate/app/logs',
             'kernel.bundles' => array(
