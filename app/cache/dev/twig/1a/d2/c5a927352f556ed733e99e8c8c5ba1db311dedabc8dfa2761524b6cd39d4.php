@@ -29,24 +29,24 @@ class __TwigTemplate_1ad2c5a927352f556ed733e99e8c8c5ba1db311dedabc8dfa2761524b6c
     {
         // line 4
         echo "<h1>Annonce creation</h1>
-
-    ";
+    <div class=\"ajout-annonce\">
+        ";
         // line 6
         echo         $this->env->getExtension('form')->renderer->renderBlock($this->getContext($context, "form"), 'form');
         echo "
+    </div>
 
+    <ul class=\"record_actions\">
 
-        <ul class=\"record_actions\">
-       
-    <li>
-        <a href=\"";
+        <li>
+            <a href=\"";
         // line 12
         echo $this->env->getExtension('routing')->getPath("annonce");
         echo "\">
-            Back to the list
-        </a>
-    </li>
-</ul>
+                Back to the list
+            </a>
+        </li>
+    </ul>
 ";
     }
 

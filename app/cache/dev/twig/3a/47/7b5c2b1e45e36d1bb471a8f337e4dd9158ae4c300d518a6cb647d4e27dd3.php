@@ -85,7 +85,7 @@ class __TwigTemplate_3a477b5c2b1e45e36d1bb471a8f337e4dd9158ae4c300d518a6cb647d4e
                         <div class=\"mod-recherche\">
                             <form action=\"\">
                                 Localisation<br>
-                                <input type=\"text\" name=\"location\"\"><br>
+                                <input type=\"text\" name=\"location\"><br>
                                 Type de bien<br>                        
                                 <input type=\"text\" name=\"LastName\"><br>
                                 Pièces<br>                        
